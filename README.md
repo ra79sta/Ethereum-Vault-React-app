@@ -67,13 +67,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-### Using Web3.Js Library 
+### Using web3.js Library 
 
-Connection with block chain using web3 library 
+Connection with ethereum blockchain using web3 library 
 
 `npm install web3`
 
 ### Using Infura api
 
-For connection with block chain 
+For connection with blockchain 
 
