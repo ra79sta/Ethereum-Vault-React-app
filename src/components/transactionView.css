@@ -1,0 +1,15 @@
+.transBox {
+  width: 60%;
+  height: 400px;
+  background-color: rgb(201, 206, 204);
+  float: right;
+  margin-top: -400px;
+}
+
+.transHis {
+  color: rgb(0, 0, 0);
+  width: 100%;
+  background-color: rgb(252, 252, 252);
+  font-size: 15px;
+  font-weight: bold;
+}
