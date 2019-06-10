@@ -70,7 +70,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### Using Web.Js Library 
 
 Connection with block chain using web3 library 
-npm install web3
+
+`npm install web3`
 
 ### Using Infura api
 
