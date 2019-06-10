@@ -77,6 +77,3 @@ Connection with block chain using web3 library
 
 For connection with block chain 
 
-### Copy to clipboard
-
-npm install --save react react-copy-to-clipboard
