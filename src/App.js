@@ -18,17 +18,17 @@ class App extends Component {
       resultOfTaransaction: [],
       apiKeyTokenEthScan: "GI657KADBXE426EEC65IGTZXF559U9ZTQK",
       // testAddressWeb3: "0xa3E675F19C83d238a822B4993763715ECA1FDE19",
-      // testAddressEthScan: "0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a",
+      testAddressEthScan: "0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a",
     };
     this.deposit = this.deposit.bind(this);
   }
-  async componentDidMount() {
-    const web3 = await new Web3(
+  componentDidMount() {
+    const web3 = new Web3(
       "https://rinkeby.infura.io/v3/fc6333c1eec54d779ec3a5becfb65cb4"
     );
 
     //creating new account with web3 and infura
-    const acc = await web3.eth.accounts.create();
+    const acc = web3.eth.accounts.create();
     this.setState({ vaultAddress: acc.address, privateKey: acc.privateKey });
 
     //balance of new account with web3 and infura
@@ -62,10 +62,9 @@ class App extends Component {
 
   // using etharscan api for list of transaction for address
   getListOfTansaction = () => {
-    console.log(this.state);
     let api =
       "http://api.etherscan.io/api?module=account&action=txlist&address=" +
-      this.state.vaultAddress +
+      this.state.testAddressEthScan +
       "&startblock=0&endblock=99999999&sort=asc&apikey=" +
       this.state.apiKeyTokenEthScan +
       "";
