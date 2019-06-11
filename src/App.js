@@ -60,6 +60,7 @@ class App extends Component {
     });
   };
 
+  // using etharscan api for list of transaction for address
   getListOfTansaction = () => {
     console.log(this.state);
     let api =
