@@ -18,7 +18,7 @@ class App extends Component {
       resultOfTaransaction: [],
       apiKeyTokenEthScan: "GI657KADBXE426EEC65IGTZXF559U9ZTQK",
       // testAddressWeb3: "0xa3E675F19C83d238a822B4993763715ECA1FDE19",
-      testAddressEthScan: "0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a",
+      // testAddressEthScan: "0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a",
     };
     this.deposit = this.deposit.bind(this);
   }
@@ -64,7 +64,7 @@ class App extends Component {
   getListOfTansaction = () => {
     let api =
       "http://api.etherscan.io/api?module=account&action=txlist&address=" +
-      this.state.testAddressEthScan +
+      this.state.vaultAddress +
       "&startblock=0&endblock=99999999&sort=asc&apikey=" +
       this.state.apiKeyTokenEthScan +
       "";
