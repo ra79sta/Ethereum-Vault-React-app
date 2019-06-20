@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./accBalance.css";
+import "../styles/accBalance.css";
 import image from "../images/6250754.png";
 
 class AccBalance extends Component {

@@ -9,7 +9,8 @@
 .transHis {
   color: rgb(0, 0, 0);
   width: 100%;
-  background-color: rgb(252, 252, 252);
+  height: 25px;
+  background-color: rgba(252, 252, 252, 0.76);
   font-size: 15px;
   font-weight: bold;
 }

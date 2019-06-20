@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./transactionView.css";
+import "../styles/transactionView.css";
 
 class Transactions extends Component {
   render() {
@@ -23,7 +23,7 @@ class Transactions extends Component {
                   <tr key={index}>
                     <td>{data.from}</td>
                     <td>{data.to}</td>
-                    <td>{data.value}</td>
+                    <td>{data.value / 1000000000000000000} ETH</td>
                   </tr>
                 );
               })}
